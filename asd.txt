@@ -1,0 +1,77 @@
+1.下载Git软件：  git必须要联网
+     傻瓜式安装，一直下一步;
+   安装成功后 ，在桌面鼠标右键你会看见两个东西    
+   Git GUI Here :可视化软件操作
+   Git Bash Here : 命令行操作
+
+2.安装乌龟的Git  ，下一步遇到那个哪个;
+    |-- 选中OpenSSH;   
+    |-- username: 瞎写
+    |-- email: 瞎写
+
+3.汉化包安装了:
+
+4.安装成功后 桌面鼠标右键 ，放到乌龟图标上，选中
+   settings;  选中 中国 ，中国文简体
+    
+5.百度 ，搜索GitHub  ，并注册账号; Sign in 注册
+    有点慢 稍等一会儿
+
+6. 需要在本地创建一个 仓库;  
+     随便找个盘符: 在盘符下创建repository文件夹 
+      必须在文件夹中 ， 鼠标右键 点击 Git bash here
+     Git的命令： git  init 回车
+
+我们
+阿萨德使用Git 时，将数据存储到 暂存区f
+
+1.在repository文件夹中  创建一个 hello.txt
+   里面写点啥都行;
+    执行 git add 文件名 --->这时就是将 文件存储到暂存区中了
+  ***这时 你的文件会出现 蓝色的 +  ，就是在暂存区中;
+
+2.去Github上创建远程仓库;
+
+3.回到Git窗口 ，创建SSH 密钥
+     ssh-keygen -t rsa -C "tangleipyl@163.com"  一直 回车
+ 会出现一个长方型;
+ 
+ 这时去 你的C:\Users\Administrator\.ssh
+ 
+ id.rsa.pub 文件打开;
+ 
+ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAg0yCMzbdQkN8WgsN0gwbsod9XLR+uqhPFoy5WLCi7aDmX/lDnl0cwLjZ6FuTz7y3yXqCe7dd7C16yFZS9NPQEy8r0RWtlKDcsb/vGYOYzXU+NoyoU8CBhTPcrCH+H4mQ0TDvU28DlVTRRQGU0vEYRs2WaGeo5GS602rZkjQg5Ty3RV2o3n772WEn6/MamRxeoWroi0KW9zrhFH8amt2kmIxzxd89V29k+aHpSADZ8YyEofqK2ufQ3RibKY9BIpuDvIsmfZc6dZEX8o0GcUJGKnZZO4fA4mkacCi+j96y4E2jVprIbNssWkDmYTe5tnBJ5GUmMMYfuhcbvlATIRb9 1985820420@qq.com
+
+ 添加成功后 ，GitHub上会有个钥匙
+  
+ 切回仓库页面  
+ git remote add origin git@github.com:gaoyuanze521184/test.git 回车执行
+   
+ git push -u origin master ，执行完毕后 ，浏览器刷新
+  就会看见 GitHub上的文件;
+  
+***
+  1.文件在暂存区 
+  2.本地仓库  
+       提交到 master 本地仓库标识 
+  3.中央仓库  
+  
+  以上操作 如果命令行不好使, 就用小乌龟软件提交
+  
+  
+----------------------------------------
+绿色对号 和蓝色加号的显示
+  进入到注册标后 ，让你创建，选择 项目，左边会出现
+文件夹，起名字Max ....... ,界面的右侧有一个默认键 双击代开
+  2000 ， 关机重启
+
+
+
+
+
+存储过程 将数据存储到暂存区 再去提交到中央仓库中
+在暂存区文件中创建
+在Respository文件夹中创建一个helloWord
+必须经过暂存区 本地库 中央仓库
+
+
